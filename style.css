@@ -1,0 +1,9 @@
+body{
+    background-position: center;
+    background-size: cover;
+}
+
+canvas{
+    border-radius: 10px;
+    box-shadow: 0 0 10 10 white;
+}
