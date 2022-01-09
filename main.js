@@ -1,4 +1,3 @@
-
 /*created by prashant shukla and ritvik buxi*/
 
 var paddle2 =10,paddle1=10;
@@ -24,6 +23,10 @@ var ball = {
 function setup(){
   var canvas =  createCanvas(700,600);
   canvas.center();
+
+  video = createCapture(VIDEO);
+  video.size(800,400);
+  video.parent("game_console");
 }
 
 
@@ -131,9 +134,9 @@ if(pcscore == 10){
     rect(0,0,width,height-1);
     fill("white");
     stroke("white");
-    textSize(25)
-    text("Game Over!☹☹",width/2,height/2);
-    text("Reload The Page!",width/2,height/2+30)
+    textSize(25);
+    text("Game Over!",width/2,height/2);
+    text("If You Want To Play Again Reload The Page!",width/2,height/2+30)
     noLoop();
     pcscore = 0;
 }

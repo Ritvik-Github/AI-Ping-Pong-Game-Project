@@ -1,7 +1,6 @@
 <!--Created By Prashant Shukla and Ritvik Buxi-->
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Ping Pong</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +12,7 @@
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
-
 </head>
-
 <body background="background1.jpg">
     <center>
         <header style="float: left !important; width: 100%; font: 32px; line-height: 2; margin: 0;" class="btn btn-warning">
@@ -41,11 +38,12 @@
         <section id="game">
             <button id="restartbtn" onclick="restartm()" class="btn btn-success">Restart The Game</button>
             <button id="play" onclick="playm()" class="btn btn-success">Play Game</button><br><br>
-            <canvas></canvas>
+            <canvas>
+            </canvas>
+            <div id="game_console"></div>
             <div id="footer">Source Code : <a href="www.githubcom/linuk">Linuk</a> || Credit: Mario</div>
         </section>
     </center>
     <script src="main.js"></script>
 </body>
-
 </html>
